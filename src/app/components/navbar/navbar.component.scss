@@ -4,7 +4,8 @@
  */
 
  body {
-  background: #ffffff !important;
+  background: #7E6AAD !important;
+
 }
 /* main-header start */
 [data-target="#mainMenu"] {
@@ -15,20 +16,28 @@
 #mainMenu li > a {
   font-size: 15px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #7E6AAD;
   font-weight: 400;
   position: relative;
   z-index: 1;
   text-decoration: none;
+  text-align: center;
+  
+  
 }
 
 .main-header.fixed-nav #mainMenu li > a {
-  color: #fff;
+  color: #7E6AAD;
   text-decoration: none;
+  text-align: center;
+ 
 }
 
 #mainMenu li:not(:last-of-type) {
-  margin-right: 30px;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: center;
+
 }
 
 #mainMenu li > a::before {
@@ -36,9 +45,10 @@
   content: "";
   width: calc(100% - 1px);
   height: 1px;
-  background: #fff;
+  background: #7E6AAD;
   bottom: -6px;
   left: 0;
+  text-align: center;
 
   -webkit-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
@@ -60,29 +70,32 @@
   -webkit-transform-origin: left center;
   -ms-transform-origin: left center;
   transform-origin: left center;
+  text-align: center;
 }
 
 .main-header.fixed-nav #mainMenu li > a::before {
-  background: #000;
+  background: #7E6AAD;
 }
 
 .main-header {
   position: fixed;
-  top: 25px;
+  top: 15px;
   left: 0;
   z-index: 99;
-  width: 100%;
+  width: 85%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+
 }
 
 .main-header.fixed-nav {
   top: 0;
-  background: #fff;
+  background: #7E6AAD;
   -webkit-box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
   box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  text-align: center;
 }
 
 .main-header.fixed-nav .navbar-brand > img:last-of-type {
@@ -111,7 +124,7 @@
 
   .navbar-toggler {
     margin: 0;
-    padding: 0;
+    padding: 30;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -120,6 +133,7 @@
     border: none;
     border-radius: 0;
     outline: none !important;
+    text-align: center;
   }
 
   .main-header .navbar {
@@ -127,7 +141,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    text-align: center;
+
   }
 
   .main-header .navbar-nav {
@@ -135,14 +149,15 @@
   }
 
   .main-header .navbar-nav li .nav-link {
-    text-align: center;
+    
     padding: 20px 15px;
     border-radius: 0px;
+
   }
 
   /**/
   .main-header .navbar-toggler .icon-bar {
-    background-color: #7E6AAD;
+    background-color: #fff;
     margin: 0 auto 6px;
     border-radius: 0;
     width: 30px;

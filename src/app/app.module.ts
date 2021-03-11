@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 import { APP_ROUTING } from './app.routes';
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    AnimateOnScrollModule.forRoot()
     
   ],
   providers: [

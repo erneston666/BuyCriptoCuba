@@ -1,16 +1,19 @@
-
-  <section id="tittle">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init();
+ </script>
+  <section class="animate__animated animate__zoomIn" id="tittle">
     <br>
   <div class="blockquote-wrapper">
     <div class="blockquote">
       <h1>
         Compra y Vende criptomonedas desde Cuba
        </h1>
-      <h4>Aprovecha las comisiones más bajas del mercado</h4>
+      <h4 >Aprovecha las comisiones más bajas del mercado</h4>
       <br>
-      <div class="botones">
+      <div class="botones" >
       <div class="btn-group" role="group" aria-label="">
-        <button class="button" data-toggle="modal" data-target="ModalLogin">
+        <button class="button" data-toggle="modal" data-target="#exampleModal">
           Iniciar Sesión
           <div class="button__horizontal"></div>
           <div class="button__vertical"></div>
@@ -44,11 +47,11 @@
     <br>
     <br>
     <br>
-    <section id ="a1">
-      <div id = "a1">
+    <section id ="a1" >
+      <div  id = "a1 animated"  animateOnScroll animationName="animate__zoomIn" >
         <h1 class="a1">Compra y Vende CriptoMonedas Facilmente</h1>
         <h5 class = "a1">Aprovecha las comisiones mas bajas del mercado</h5>
-        <div class="img1">
+        <div class="img1"  >
           <img src="../../../assets/img/a1.png" alt="">
         </div>
       </div>
@@ -137,3 +140,11 @@
 
 
     </section>
+
+<!-- Modal  -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <app-login></app-login>
+  </div>
+</div>
